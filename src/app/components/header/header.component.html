@@ -1,0 +1,8 @@
+<header>
+<h1 class="component-child">{{title}}</h1>
+<h2>Versione n. {{version}}</h2>
+<button *ngIf="!userName" (click)="login()">login</button>
+<!-- qui sopra sto dicendo: se non c'è userName, renderizza il pulsante. Altrimenti nascondilo -->
+<h3 *ngIf="userName">Utente: {{userName}}</h3>
+<!-- se quell'if non è soddisfatto, l'elemento (in questo caso questo h3) non viene renderizzato -->
+</header>
